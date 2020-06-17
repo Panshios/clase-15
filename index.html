@@ -3,14 +3,13 @@
     <head>
         <!-- COMMON TAGS -->
 <meta charset="utf-8">
-<title>robot</title>
+<title>Panshios Portafolio</title>
 <!-- Search Engine -->
-<meta name="description" content="noindex">
+<meta name="googlebot" content="noindex">
 <!-- Schema.org for Google -->
-<meta itemprop="name" content="robot">
+<meta itemprop="name" content="noindex">
 <meta itemprop="description" content="noindex">
        	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>Panshios Portfolio</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
         <link href="style.css" rel="stylesheet" />
   <!-- Bootstrap core CSS -->
@@ -134,8 +133,21 @@
         <p>Por ahora no sé como arreglar el hecho que <em>Ya arreglé la cosita esa wiiii</em> <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
       </div>
-        <img  src="imagen/nmp.png" alt="panshios icon" >
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+      <script>
+            Papa.parse("lista.csv", {
+                download: true,
+                complete: function (results) {
+                    console.log(results.data);
+                    var nombre = results.data;
+                    for (let i = 1; i < nombre.length - 1; i++) {
+                        $("#articulos").append(
+                        	 '<div class="item col-sm-6 col-md-4" tipo="' + nombre[i][0]  + '"><img class="card-img-top" src="'+ nombre[i][2] + '</h5><button type="button" class="close" aria-label="Close"><span aria-hidden="true">&times;</span></button></div><div class="modal-body">' + nombre[i][3] + '</div></div></div></div>'
+					);
+       </script>
+
+        <img  src="imagen/nmp.png" alt="panshios icon">
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
  		<img  src="imagen/nms.png" alt="panchito asomado" >
   		<img  src="imagen/nmw.png" alt="DeathFrozen Wyvern" >
 
