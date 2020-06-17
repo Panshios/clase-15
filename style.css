@@ -2,16 +2,26 @@
 
 body {
     
-    background: rgb(87,35,100);
+    background: rgb(80,53,150);
     background-size: 100% auto;
     font-family: 'Ubuntu', sans-serif;
     color: rgb(255,255,255);
     line-height: 1.4;
 }
-
+footer{
+	background: rgb(100,73,170);
+}
 code {
 	color: rgb(255,174,66);
 }
 h1 {
 	font-weight: bold 
+}
+
+img {
+    max-width:80%;
+    height:auto;
+    padding-top: 5%;
+    display: block;
+    margin: 0 auto;
 }
