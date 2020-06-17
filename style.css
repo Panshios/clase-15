@@ -10,10 +10,13 @@ footer{
 	background: rgb(100,73,170);
 }
 code {
-	color: rgb(255,174,66);
+	color: rgb(205,110,54);
+}
+em {
+	font-weight: bold;
 }
 h1 {
-	font-weight: bold 
+	font-weight: bold;
 }
 
 img {
@@ -168,7 +171,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: rgb(140,113,210);
 }
 
 ul.CTAs {
@@ -198,7 +201,12 @@ a.article:hover {
     CONTENT STYLE
 ----------------------------------------------------- */
 
-
+#content {
+    width: 100%;
+    padding: 20px;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES
