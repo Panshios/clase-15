@@ -12,6 +12,6 @@ body {
 code {
 	color: rgb(255,174,66);
 }
-bg-light border-right {
-	background-color: rgb(87+25,35+25,125);
+h1 {
+	font-weight: bold 
 }
