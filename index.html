@@ -15,8 +15,8 @@
         <link href="style.css" rel="stylesheet" />
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <!-- Custom styles for this template -->
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     </head>
 
 <body>
@@ -24,20 +24,111 @@
   <div class="d-flex" id="wrapper">
 
     <!-- Sidebar -->
-    <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Start Bootstrap </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Inicio</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Sobre mí</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Diseño</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Ilustración</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Contacto</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Status</a>
-      </div>
-    </div>
+<div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Panshios</h3>
+                <strong>P</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contacto
+                    </a>
+                </li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
     <!-- /#sidebar-wrapper -->
       <div class="container-fluid">
-        <h1 class="mt-4">Simple Sidebar</h1>
+        <h1 class="mt-4">Panshios</h1>
         <p>Esta extensión de texto será reempazada con un <code>texto real</code> más a futuro, corresponde a una introducción que eventualmente ocupará <code>este espacio</code></p>
         <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>. The top navbar is optional, and just for demonstration. Just create an element with the <code>#menu-toggle</code> ID which will toggle the menu when clicked.</p>
       </div>
@@ -50,20 +141,28 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-  <!-- Menu Toggle Script -->
-  <script>
-    $("#menu-toggle").click(function(e) {
-      e.preventDefault();
-      $("#wrapper").toggleClass("toggled");
-    });
-  </script>
   <img  src="imagen/nmp.png" alt="panshios icon" >
   <img  src="imagen/nms.png" alt="panchito asomado" >
   <img  src="imagen/nmw.png" alt="DeathFrozen Wyvern" >
 
   <footer class="py-5">
     <div class="container">
-      <p class="m-0 text-center text-white">Francisco Pezoa AKA &copy; Panshios 2020</p>
+      <p class="m-0 text-center text-white">Francisco Pezoa AKA Panshios 2020</p>
     </div>
   </footer>
+
+   <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
